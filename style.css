@@ -1,0 +1,149 @@
+
+
+
+
+
+
+@font-face {
+    font-family: "Yekan";
+    src: url('Yekan.eot');
+    src: url('Yekan.eot?#iefix') format('Yekan-opentype'),
+         url('Yekan.woff') format('woff'),
+         url('Yekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0095dd;
+    color: #fff;
+    min-height: 100vh;
+    margin:0 ;
+    font-family: 'Yekan';
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    
+}
+
+canvas{
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 44px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h4{
+    font-family:sans-serif
+}
+.btn{
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+.rules{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    background: #333;
+    padding: 25px;
+    line-height: 1.5;
+    color: #fff;
+    transform: translateX(-350px);
+    transition: transform 0.7s ease-in;
+    text-align: right;
+}
+.rules.active{
+    transform: translateX(0px);
+}
+
+.rule.btn{
+    position: absolute;
+    left:30px;
+    top:30px;
+}
+
+
+.btn:focus{
+    outline: 0;
+}
+.btn:hover{
+    background: #222;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+canvas{
+    margin-bottom: 80px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5x;
+}
+
+button{
+    font-family: 'Yekan';
+}
+
+.won, .lost{
+    background: #f0f0f0;
+    display: flex;
+    height: 200px;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.lost p{
+    color:#0095dd;
+}
+
+
+.won h3, .lost h3{
+    color: #0095dd;
+}
+
+.won button, .lost button {
+    border: 1px solid #0095dd;
+    padding: 10px 20px;
+    color:#0095dd;
+    border-radius: 5px;
+}
+
+.won button:hover, .lost button:hover{
+    cursor: pointer;
+    background:#0095dd;
+    color: #f0f0f0;
+}
+.won button:active, .lost button:active{
+    transform: scale(0.98);
+}
